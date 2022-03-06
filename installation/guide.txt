@@ -1,0 +1,6 @@
+Give execute permission to installation script file before executing it.
+
+If you want to configure istio for a specific namespace other than default, 
+then inside the script file, replace default with your desired name,
+kubectl label namespace <desired namespace name here> istio-injection=enabled --overwrite
+
